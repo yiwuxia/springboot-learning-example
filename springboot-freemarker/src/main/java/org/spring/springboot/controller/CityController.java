@@ -17,6 +17,9 @@ import java.util.List;
 @Controller
 public class CityController {
 
+	/*
+	 * lijinlijin
+	 */
     @Autowired
     private CityService cityService;
 
