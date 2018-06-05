@@ -22,7 +22,11 @@ public class CityController {
 
     @RequestMapping(value = "/api/city/{id}", method = RequestMethod.GET)
     public String findOneCity(Model model, @PathVariable("id") Long id) {
-        model.addAttribute("city", cityService.findCityById(id));
+       // model.addAttribute("city", cityService.findCityById(id));
+    	City city=new City();
+    	city.setCityName("aaa");
+    	city.setDescription("bbb");
+    	model.addAttribute("city", city);
         return "city";
     }
 
