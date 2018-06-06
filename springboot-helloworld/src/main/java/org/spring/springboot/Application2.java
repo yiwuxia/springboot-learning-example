@@ -14,4 +14,10 @@ public class Application2 {
 	        SpringApplication.run(Application2.class,args);
 	    }
 
+	/*	@Override
+		public void customize(ConfigurableEmbeddedServletContainer container) {
+			// TODO Auto-generated method stub
+			container.setPort(8090);
+		}*/
+
 }
